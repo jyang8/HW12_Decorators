@@ -1,0 +1,48 @@
+kateJ -- 2017-03-29 14:30-14:45
+   the project is born!
+   added all initial files and data, started on flask app
+
+kateJ -- 2017-03-30 14:30-15:35
+   started parsing through csv file
+   wish other people would update the devlog!!!
+
+kateJ -- 2017-03-31 14:30-15:35
+   looking for new data because our original data has major issues... oh well
+   update: found the new data, and rewrote the functions for the new csv file!
+
+kateJ -- 2017-04-02 17:00-18:00
+   wrote functions for parsing/extrapolating data by year/state/age
+   updated project descriptions with new goals
+   why isn't anyone updating this devlog
+
+EliasM -- 2017-04-03 14:00-15:00
+   researched maps, ended up settling for just doing a square map because it seemed much easier
+
+joelY -- 2017-04-03 15:35
+   worked on time slider controls
+
+kateJ -- 2017-04-04 14:30-15:35
+   data is now accessible from app.py
+
+joelY -- 2017-04-04 15:35
+   time slider forward functionality now working
+
+joelY -- 2017-04-04 20:03
+   time slider controls finished, radio buttons added
+
+joelY -- 2017-04-04 22:57
+   funciton created to import data to javascript
+
+EliasM -- 2017-04-04 7:00-10:00
+   created the map, does not actually reflect the data yet
+
+joelY -- 2017-04-04 23:05
+  formatting set up for advertising information
+
+EliasM -- 2017-04-04 23:30
+  bug fixes
+
+nobelG -- 2017-04-05 2:41
+  Integrated data from back-end into the front-end
+  Made map reflect smoking data
+  Wrapped up project

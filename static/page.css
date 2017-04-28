@@ -1,0 +1,48 @@
+#colRadioWrap{
+    color: blue;
+
+}
+
+#hsRadioWrap{
+    color: rgb(255,0,0);
+}
+
+#bothRadioWrap{
+    color: purple;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+/*
+#radios{
+display:table;
+table-layout:fixed;
+}
+
+#radiochild{
+display:table-cell;
+vertical-align:middle;
+float:none;
+}
+
+
+#ctrlPanel {
+text-align: center;
+display: flex;
+justify-content: center;
+align-items:center;
+}
+
+#svgContainer {}
+ */

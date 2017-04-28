@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edg1e">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Smoking is Bad</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/page.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <br>
+    <div id="pagePlaceHolder" style="max-height: 95vh; display: flex; align-items: center; justify-content: center;">
+      <h1 style = "font-weight: bold;">Smoking Rates for High School and College Students</h1>
+    </div>
+    <br>
+    <div class = "container-fluid">
+
+      <div class="row" >
+	<div class="col-md-1">
+	</div>
+
+
+	<div class="col-md-3 text-right align-middle">
+	  <div>
+	    Data Source
+	  </div>
+	  <div class="radio" id="hsRadioWrap">
+	    <label><input type="radio" name="optradio" id="hsRadio" defaultValue = "true">HS</label>
+	  </div>
+	  <div class="radio" id="colRadioWrap">
+	    <label><input type="radio" name="optradio" id="colRadio">College</label>
+	  </div>
+	</div>
+
+
+	<div class="col-md-8 text-left" align = "center">
+	  <div id="svgContainer">
+	    <svg id="s" xmlns="http://www.w3.org/2000/svg" width = "1000", height = "500"/>
+
+
+	    <!--TEMPORARY BORDER-->
+	  </div>
+	</div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row" align="center">
+      <i>Colors keyed by data source option</i>
+
+    </div>
+      <br>
+
+    <div id="ctrlPanel" class = "container-fluid">
+      <div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-3 text-right">
+
+	  <button id="resetbtn" class="btn btn-danger">
+	    <span class="glyphicon glyphicon-repeat"></span>
+	  </button>
+	  <button id="rewindbtn" class="btn">
+	    <span id="rewindBtnIcon" class="glyphicon glyphicon-backward">
+	    </span>
+	  </button>
+	  <button id="playbtn" class="btn btn-success">
+	    <span id="playBtnIcon" class="glyphicon glyphicon-play">
+	    </span>
+	  </button>
+
+	</div>
+
+	<div class="col-md-3 text-left">
+	  <input type="range" step="1" min="2002" max="2015" id="timeSlider"/>
+	</div>
+
+	<div class="col-md-2 text-left" id="timeText">
+	</div>
+      </div>
+    </div>
+
+    <br>
+    <div class = "row">
+      <div class="col-md-3"></div>
+      <p class="col-md-6">
+      A project by Elias Milborn, Kate Ly Johnston, Joel Ye, and Nobel Gautam.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <p class="col-md-6">
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <p class="col-md-6">
+
+
+      </p>
+    </div>
+    </div>
+
+    <br><br>
+    <footer>
+      <div class="container">
+        <span id="copyright" style = "display: flex; align-items: center; justify-content:center;">&copy; 2017 Alternative Data</span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+	 ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/d3.min.js"></script>
+    <script src="../static/script.js"></script>
+
+
+  </body>
+
+</html>
