@@ -2,30 +2,36 @@ import time
 
 # returns name of the function and its arguments
 def wrapper(f):
-    return lambda arg: str(f.func_name) + ': (' + str(arg) + ')\n'
-
+    def inner(*args):
+        print str(f.func_name) + ': (' + str(*args) + ')'
+        return f(*args)
+    return inner
+            
 # returns execution time of given function
 def timer(f):
-    def inner(arg):
-        start = time.time()
-        f(arg)
+    start = time.time()
+    def inner(*args):        
+        f(*args)
         end = time.time()
         return 'execution time: ' +  str(end - start)
-    return inner  
+    return inner
 
 @wrapper
 #@timer
-def foo(a):
-    return a
+def factR(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factR(n-1)
 
 @wrapper
 #@timer
 def fact(n):
-    if n == 0:
-        return 1
-    else:
-        return n * fact(n-1)
-
-
-print foo('hello')
-print fact(3)
+    x = 1
+    while n > 1:
+        x *= n
+        n -= 1
+    return x
+    
+print factR(4)
+print fact(4)
